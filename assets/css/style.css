@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.zilla-slab-light {
+    font-family: "Zilla Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .zilla-slab-regular {
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .zilla-slab-medium {
+    font-family: "Zilla Slab", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .zilla-slab-semibold {
+    font-family: "Zilla Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .zilla-slab-bold {
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .zilla-slab-light-italic {
+    font-family: "Zilla Slab", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .zilla-slab-regular-italic {
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .zilla-slab-medium-italic {
+    font-family: "Zilla Slab", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .zilla-slab-semibold-italic {
+    font-family: "Zilla Slab", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .zilla-slab-bold-italic {
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+.inter-fontname {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 14;
+  font-style: normal;
+}
+  
+.banner {
+    padding-left: 44px;
+    justify-content: left;
+    align-items: center;
+    gap: 0px;
+    flex-shrink: 0;
+
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0; /* Ensures no extra spacing */
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97px;
+    background: white;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Push logo to the right */
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 34px;
+    width: auto;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;  
+    display: flex;
+}
+
+.background-video {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover;  /* Ensures it fills the entire space */
+    z-index: -1;
+}
+
+.hero-header {
+    color: #FFF;
+    font-family: Zilla Slab; 
+    font-weight: 500;
+    font-size: 57px;
+    font-style: normal;
+    line-height: 68px;
+    word-wrap: break-word;
+    position: relative;
+    z-index: 1;
+    max-width: 80%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
