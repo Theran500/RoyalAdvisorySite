@@ -100,8 +100,10 @@
 }
 
 .logo img {
+    padding-top: 5px;
     margin-right: 34px;
-    width: auto;
+    max-width: 130px; /* Adjust to desired size */
+    height: auto;
 }
 
 .hero {
@@ -138,4 +140,26 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    scroll-behavior: smooth;
+}
+
+.landing-section {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
+}
+
+.landing-section.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.subnav {
+  cursor: default; /* Makes it show the hand cursor */
+  user-select: none; /* Prevents text selection */
 }
