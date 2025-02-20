@@ -46,10 +46,11 @@
 
             <section class="hero">
 
-                <video autoplay muted loop class="background-video">
-                    <source src="assets/videos/Landing_1.mp4" type="video/mp4">
+                <video autoplay muted loop class="background-video" id="landing-video">
+                    <source id="video-source" src="" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                
             </section>
 
             <div style="width: 1440px; height: 645px; left: 0px; top: 97px; position: absolute"></div>
@@ -85,12 +86,14 @@
         </section>
 
         <section id = "Landing_2" class="landing-section">
+            
             <section class="hero">
 
-                <video autoplay muted loop class="background-video">
-                    <source src="assets/videos/Landing_2.mp4" type="video/mp4">
+                <video autoplay muted loop class="background-video" id="landing-video">
+                    <source id="video-source" src="" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                
             </section>
 
             <div style="width: 1440px; height: 645px; left: 0px; top: 97px; position: absolute"></div>
@@ -102,6 +105,9 @@
             <div style="width: 54px; height: 0px; left: 711px; top: 743px; position: absolute; transform: rotate(-90deg); transform-origin: top left; border: 1px white solid"></div>
             <div style="width: 54px; height: 0px; left: 1056px; top: 743px; position: absolute; transform: rotate(-90deg); transform-origin: top left; border: 1px white solid"></div>
 
+            <div style="left: 78px; top: 259px; position: absolute; color: white; font-size: 57px; font-family: Zilla Slab; font-weight: 500; line-height: 68px; word-wrap: break-word">Our Story,<br/>Your Future</div>
+            <div style="width: 486px; height: 115px; left: 78px; top: 459px; position: absolute; color: white; font-size: 18px; font-family: Inter; font-weight: 400; line-height: 24px; letter-spacing: 0.15px; word-wrap: break-word">Born from a passion for excellence, Royal Advisory was founded to help businesses evolve and excel. We partner with you to shape a future of success.</div>
+            
             <div class="subnav">
                 <span class="subnav-item active" data-target="Landing_1">
                     <div style="width: 196px; height: 32px; left: 78px; top: 699px; position: absolute; color: white; font-size: 20px; font-family: Zilla Slab; font-weight: 400; line-height: 32px; word-wrap: break-word">Explore your Potential</div>
@@ -124,10 +130,10 @@
 
         <section id = "Landing_3" class="landing-section">
             <section class="hero">
-                <video autoplay muted loop class="background-video">
-                    <source src="assets/videos/Landing_3.mp4" type="video/mp4">
+                <video autoplay muted loop class="background-video" id="landing-video">
+                    <source id="video-source" src="" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                </video>                
             </section>
 
             <div style="width: 1440px; height: 645px; left: 0px; top: 97px; position: absolute"></div>
@@ -139,6 +145,9 @@
             <div style="width: 54px; height: 0px; left: 711px; top: 743px; position: absolute; transform: rotate(-90deg); transform-origin: top left; border: 1px white solid"></div>
             <div style="width: 54px; height: 0px; left: 1056px; top: 743px; position: absolute; transform: rotate(-90deg); transform-origin: top left; border: 1px white solid"></div>
 
+            <div style="left: 78px; top: 259px; position: absolute; color: white; font-size: 57px; font-family: Zilla Slab; font-weight: 500; line-height: 68px; word-wrap: break-word">Proven Counsel,<br/>Real Impact</div>
+            <div style="width: 486px; height: 115px; left: 78px; top: 459px; position: absolute; color: white; font-size: 18px; font-family: Inter; font-weight: 400; line-height: 24px; letter-spacing: 0.15px; word-wrap: break-word">With +20 years of experience and +100 successful projects, we’ve helped businesses navigate challenges and achieve measurable results. Your success is our mission.</div>
+            
             <div class="subnav">
                 <span class="subnav-item active" data-target="Landing_1">
                     <div style="width: 196px; height: 32px; left: 78px; top: 699px; position: absolute; color: white; font-size: 20px; font-family: Zilla Slab; font-weight: 400; line-height: 32px; word-wrap: break-word">Explore your Potential</div>
@@ -163,10 +172,10 @@
         <section id = "Landing_4" class="landing-section">
 
             <section class="hero">
-                <video autoplay muted loop class="background-video">
-                    <source src="assets/videos/Landing_4.mp4" type="video/mp4">
+                <video autoplay muted loop class="background-video" id="landing-video">
+                    <source id="video-source" src="" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                </video>                
             </section>
 
             <div style="width: 1440px; height: 645px; left: 0px; top: 97px; position: absolute"></div>
@@ -202,24 +211,72 @@
             
         <script>
             document.addEventListener("DOMContentLoaded", () => {
-                // Hide all sections except the first one
+                // Define an array of video sources for each landing page
+                const videoSets = {
+                    "Landing_1": [
+                        "assets/videos/Landing_1_1.mp4",
+                        "assets/videos/Landing_1_2.mp4",
+                        "assets/videos/Landing_1_3.mp4",
+                        "assets/videos/Landing_1_4.mp4",
+                        "assets/videos/Landing_1_5.mp4"
+                    ],
+                    "Landing_2": [
+                        "assets/videos/Landing_2_1.mp4",
+                        "assets/videos/Landing_2_2.mp4",
+                        "assets/videos/Landing_2_3.mp4",
+                        "assets/videos/Landing_2_4.mp4"
+                    ],
+                    "Landing_3": [
+                        "assets/videos/Landing_3_1.mp4",
+                        "assets/videos/Landing_3_2.mp4",
+                        "assets/videos/Landing_3_3.mp4"
+                    ],
+                    "Landing_4": [
+                        "assets/videos/Landing_4_1.mp4",
+                        "assets/videos/Landing_4_2.mp4",
+                        "assets/videos/Landing_4_3.mp4",
+                        "assets/videos/Landing_4_4.mp4"
+                    ]
+                };
+
+                // Function to set a random video for a given section
+                function setRandomVideo(sectionID) {
+                    let section = document.getElementById(sectionID);
+                    if (!section) return;
+
+                    let videoElement = section.querySelector("video");
+                    let sourceElement = section.querySelector("video source");
+
+                    if (videoElement && sourceElement && videoSets[sectionID]) {
+                        let randomVideo = videoSets[sectionID][Math.floor(Math.random() * videoSets[sectionID].length)];
+                        sourceElement.src = randomVideo;
+                        videoElement.load(); // Load new video
+                        videoElement.play(); // Ensure autoplay works
+                    }
+                }
+
+                // Hide all sections except the first one on load
                 document.querySelectorAll(".landing-section").forEach((section, index) => {
                     section.classList.toggle("active", index === 0);
+                    if (index === 0) {
+                        setRandomVideo(section.id); // Set initial random video
+                    }
                 });
-        
+
                 // Handle subnav clicks
                 document.querySelectorAll(".subnav-item").forEach(item => {
                     item.addEventListener("click", function () {
                         let targetSection = document.getElementById(this.getAttribute("data-target"));
-        
+
                         if (!targetSection) {
                             console.error(`Section with ID '${this.getAttribute("data-target")}' not found.`);
                             return;
                         }
-        
+
                         // Remove active class from all sections
                         document.querySelectorAll(".landing-section").forEach(section => {
                             section.classList.remove("active");
+
                             // Stop the video in the hidden section
                             let video = section.querySelector("video");
                             if (video) {
@@ -227,18 +284,15 @@
                                 video.currentTime = 0; // Reset to beginning
                             }
                         });
-        
+
                         // Activate the target section (triggers fade-in)
                         setTimeout(() => {
                             targetSection.classList.add("active");
-        
-                            // Restart video playback
-                            let targetVideo = targetSection.querySelector("video");
-                            if (targetVideo) {
-                                targetVideo.play(); // Start playing from beginning
-                            }
+
+                            // Restart video playback with a new random video
+                            setRandomVideo(targetSection.id);
                         }, 100); // Slight delay for smooth transition
-        
+
                         // Update subnav active state
                         document.querySelectorAll(".subnav-item").forEach(nav => nav.classList.remove("active"));
                         this.classList.add("active");
@@ -246,7 +300,6 @@
                 });
             });
         </script>
-
     </main>
 
 </body>
