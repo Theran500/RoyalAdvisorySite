@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="109.56995"
+   height="120.9877"
+   viewBox="0 0 109.56995 120.9877"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="check.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.93"
+     inkscape:cx="62.286689"
+     inkscape:cy="62.286689"
+     inkscape:window-width="1104"
+     inkscape:window-height="606"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="109.56995"
+       height="120.9877"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="teenyicons:shield-tick-outline"
+     transform="matrix(0.90563211,0,0,1,-1.3645744,-1.506315)"
+     style="stroke-width:1.05081">
+    <path
+       id="Vector"
+       d="m 33.0671,62 24.8,20.6666 33.0667,-41.3333 M 62.0005,4.1333 4.13379,37.2 v 5.952 C 4.13201,60.4905 9.77921,77.3575 20.2205,91.1997 30.6617,105.042 45.3285,115.105 62.0005,119.867 78.6724,115.105 93.3392,105.042 103.78,91.1997 114.222,77.3575 119.869,60.4905 119.867,43.152 V 37.2 Z"
+       stroke="#f24452"
+       stroke-width="5.25405"
+       stroke-linejoin="round" />
+  </g>
+</svg>
